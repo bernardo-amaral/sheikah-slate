@@ -4,7 +4,7 @@ namespace bernardoamaral\sheikah;
 
 class Slate
 {
-    function __construct() {
+    public function __construct() {
         echo "Hello world!!!";
     }
 
