@@ -31,4 +31,5 @@ install:
     - composer --prefer-source install
 
 script:
-    - ./vendor/bin/simple-phpunit
+    #- ./vendor/bin/simple-phpunit
+    - ./vendor/bin/phpunit --bootstrap src/autoload.php --testdox tests
