@@ -21,7 +21,7 @@
         "phpunit/phpunit": "4.*"
     },
     "autoload": {
-        "psr-4": { "bernardoamaral\\sheikahslate\\": "src/" },
-        "files": ["src/helloworld.php"]
+        "psr-4": { "bernardoamaral\\sheikah\\": "src/" },
+        "files": ["src/bootstrap.php"]
     }
 }
