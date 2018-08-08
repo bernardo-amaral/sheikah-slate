@@ -22,6 +22,8 @@
     },
     "autoload": {
         "psr-4": { "bernardoamaral\\sheikah\\": "src/" },
-        "files": ["src/bootstrap.php"]
+        "classmap": [
+            "/src/Slate.php"
+          ]
     }
 }

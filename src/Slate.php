@@ -1,5 +1,7 @@
 <?php
 
+namespace bernardoamaral\sheikah;
+
 class Slate
 {
     function __construct() {
