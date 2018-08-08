@@ -1,6 +1,7 @@
 {
     "name": "bernardo-amaral/sheikah-slate",
-    "description": "Test Library",
+    "description": "Nightshade's Sheikah Slate Functions Library",
+    "version": "1.0.0",
     "keywords": ["hello", "world"],
     "homepage": "https://github.com/bernardo-amaral/sheikah-slate",
     "license": "MIT",
