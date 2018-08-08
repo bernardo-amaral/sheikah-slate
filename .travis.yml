@@ -28,7 +28,7 @@ before_install:
 
 install:
     - if [[ $TRAVIS_BRANCH = master ]]; then export COMPOSER_ROOT_VERSION=dev-master; else export COMPOSER_ROOT_VERSION=$TRAVIS_BRANCH.x-dev; fi
-    - composer --prefer-source install
+    - composer install
 
 script:
     #- ./vendor/bin/simple-phpunit
