@@ -1,6 +1,6 @@
 <?php
 
-namespace bernardoamaral\sheikah\Tests\Slate;
+namespace bernardoamaral\sheikah\Tests;
 
 use PHPUnit\Framework\TestCase;
 use bernardoamaral\sheikah\Slate as Slate;
