@@ -9,4 +9,4 @@ install:
     - composer install
 
 script:
-    - ./vendor/bin/phpunit --bootstrap src/ --testdox tests
+    - ./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests/
