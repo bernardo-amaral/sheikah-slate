@@ -21,9 +21,6 @@
         "phpunit/phpunit": "4.*"
     },
     "autoload": {
-        "psr-4": { "bernardoamaral\\sheikah\\": "src/" },
-        "classmap": [
-            "/src/Slate.php"
-          ]
+        "psr-4": { "bernardoamaral\\sheikah\\": "src/" }
     }
 }
