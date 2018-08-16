@@ -24,6 +24,6 @@
         "psr-4": { "bernardoamaral\\sheikah\\": "src/" }
     },
     "scripts": {
-        "test": "phpunit --bootstrap vendor/autoload.php --testdox tests/"
+        "test": "phpunit --bootstrap vendor/autoload.php --testdox tests/ --colors=always"
     }
 }
