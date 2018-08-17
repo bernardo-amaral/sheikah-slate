@@ -29,14 +29,32 @@ composer require bernardo-amaral/sheikah-slate
 ## Running the tests
 
 ```
-    - composer tests
-    - phpunit --bootstrap vendor/autoload.php tests/
+composer tests
+
+phpunit --bootstrap vendor/autoload.php tests/
 ```
 
 ### And coding style tests
 
 ```
 phpunit --bootstrap vendor/autoload.php --testdox tests/ --colors=always
+```
+
+## How to use
+
+```
+<?php
+
+require_once 'vendor/autoload.php';
+
+use bernardoamaral\sheikah\Slate as slate;
+
+$slate = new slate();
+$raptors = $slate->order(['Delta', 'Blue', 'Echo', 'Charlie']);
+var_dump($raptors);
+
+$sumNumbers = $slate->sumValues(1, 2, 3);
+var_dump($sumNumbers); #it will output the number 6
 ```
 
 ## Built With
