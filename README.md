@@ -2,7 +2,7 @@
 
 # PHP Packagist Project, Just for Tests!
 
-I'm just trying create a vendor module for use it in my PHP projects
+I'm just create a vendor module for use it in my PHP projects
 
 ## Getting Started
 
