@@ -8,17 +8,45 @@ class Slate
         #echo "Starting Sheikah Slate...\n";
     }
 
-    public function order($elements = [])
+    /**
+     *
+     * @param array $elements
+     * @return array
+     */
+    public function order($elements = []): array
     {
         sort($elements);
         return $elements;
     }
 
-    public function sumValues(...$numbers)
+    /**
+     *
+     * @param integer ...$numbers
+     * @return integer
+     */
+    public function sumValues(int ...$numbers): int
     {
         $total = 0;
         foreach ($numbers as $n) {
             $total += $n;
+        }
+        return $total;
+    }
+
+    /**
+     *
+     * @param integer ...$numbers
+     * @return integer
+     */
+    public function subtractValues(int ...$numbers): int
+    {
+        $total = 0;
+        if (isset($numbers[0])) {
+            $total = $numbers[0];
+            unset($numbers[0]);
+            foreach ($numbers as $n) {
+                $total -= $n;
+            }
         }
         return $total;
     }

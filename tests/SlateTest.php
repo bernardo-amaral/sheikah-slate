@@ -33,4 +33,17 @@ class SlateTest extends TestCase
         $this->assertEquals($sumTotal2, 8);
         $this->assertEquals($sumTotal3, 27);
     }
+
+    public function testSubtractionValuesMethod()
+    {
+        $slate = new Slate();
+        $sumTotal1 = $slate->subtractValues(2, 2);
+        $sumTotal2 = $slate->subtractValues(7, 1);
+        $sumTotal3 = $slate->subtractValues(21, 13, 7);
+        $sumTotal4 = $slate->subtractValues(2, 5, 4);
+        $this->assertEquals($sumTotal1, 0);
+        $this->assertEquals($sumTotal2, 6);
+        $this->assertEquals($sumTotal3, 1);
+        $this->assertEquals($sumTotal4, -7);
+    }
 }
