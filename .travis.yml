@@ -11,11 +11,13 @@ install:
 script:
     - ./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests/
 
-before_deploy: "echo 'Deploying to Heroku...'"
+before_deploy:
+    - "echo 'Deploying to Heroku...'"
+    - bash ./.ci/deploy.sh
 deploy:
   provider: heroku
   api_key: 7a37f592-a8ef-4fdb-b0d1-efa530833a43
   app: ci-env
-  script: bash .ci/deploy.sh
+  script: bash ./.ci/deploy.sh
 
   after_deploy: "echo 'Heroku done!'"
