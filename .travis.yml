@@ -16,5 +16,6 @@ deploy:
   provider: heroku
   api_key: 7a37f592-a8ef-4fdb-b0d1-efa530833a43
   app: ci-env
+  script: bash .ci/deploy.sh
 
   after_deploy: "echo 'Heroku done!'"
